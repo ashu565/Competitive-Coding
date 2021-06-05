@@ -1,6 +1,7 @@
 int vis[N][N], dist[N][N], ways[N][N];
-int dx[4]={-1, +1, 0, 0};
-int dy[4]={0, 0, +1, -1};
+char moves[4] = {'L','U','R','D'};
+int dx[4] = {0,-1,0,1}; // act as row
+int dy[4] = {-1,0,1,0}; // act as col
 
 void bfs(int x, int y, int n, int m)
 {
